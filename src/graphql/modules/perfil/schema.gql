@@ -1,0 +1,13 @@
+enum tipoDePerfil {
+    ADMIN
+    NORMAL
+}
+type Perfil{
+    id: ID,
+    descricao: tipoDePerfil
+    usuarios: [Usuario]
+}
+
+type Query{
+    perfis:[Perfil]
+}
